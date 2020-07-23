@@ -1,0 +1,70 @@
+/* print.css */
+
+/* target all pages */
+@page {
+  margin: 1cm 2cm .5cm;
+}
+
+/* target the first page only */
+@page :first {
+  margin-top: 1cm;
+  margin-bottom: 2cm;
+}
+
+/* target left (even-numbered) pages only */
+@page :left {
+  margin-right: 2cm;
+}
+
+/* target right (odd-numbered) pages only */
+@page :right {
+  margin-left: 2cm;
+}
+ @media all {
+	.page-break	{ display: block;}
+}
+
+@media print {
+	.page-break	{ display: block; page-break-before: always;}
+.print-head{display : none;}
+#rdForm{
+	margin-top: 40%;
+  /*margin: 0;*/
+}
+#repeatForm{
+	margin-bottom: 120%;
+  margin-right: 0px;
+  /*padding: 0;*/
+}
+#newRepeat{
+	margin-bottom: 85%;
+  margin-right: 0px;
+  /*padding: 0;*/
+
+}
+#finalReapeat{
+	margin-bottom: 70%;
+  margin-right: 0px;
+  /*padding: 0;*/
+}
+div.divFooter {
+    position: fixed;
+    bottom: 0;
+    display: block;
+    z-index: 11111;
+  }
+  .sp_container{
+    margin-right: 10px;
+  }
+ /* .container {
+    width: 1170px;
+}*/
+.row{
+  margin: 0;
+  padding: 0;
+}
+
+p ,th, td{
+  font-size: 18px;
+}
+}
